@@ -1,0 +1,389 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Foodie|Food Blog Contact</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="{% static 'img/core-img/favicon.ico' %}">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="preloader-content">
+            <h3>Cooking in progress..</h3>
+            <div id="cooking">
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div id="area">
+                    <div id="sides">
+                        <div id="pan"></div>
+                        <div id="handle"></div>
+                    </div>
+                    <div id="pancake">
+                        <div id="pastry"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+
+        <!-- Top Header Area -->
+        <div class="top-header-area bg-img bg-overlay" style="background-image: url{% static 'img/bg-img/header.jpg' %}">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center justify-content-between">
+                    <div class="col-12 col-sm-6">
+                        <!-- Top Social Info -->
+                        <div class="top-social-info">
+                            <a href="https://www.pinterest.com/" data-toggle="tooltip" data-placement="bottom" title="Pinterest"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                            <a href="https://www.facebook.com/" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="https://x.com/?mx=2" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="https://www.linkedin.com/home" data-toggle="tooltip" data-placement="bottom" title="Linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-5 col-xl-4">
+                        <!-- Top Search Area -->
+                        <div class="top-search-area">
+                            <form action="#" method="post">
+                                <input type="search" name="top-search" id="topSearch" placeholder="Search">
+                                <button type="submit" class="btn"><i class="fa fa-search"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Logo Area -->
+        <div class="logo-area">
+            <a href="/"><img src="{% static 'images/logo.png' %}" alt=""></a>
+        </div>
+
+        <!-- Navbar Area -->
+        <div class="bueno-main-menu" id="sticker">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Menu -->
+                    <nav class="classy-navbar justify-content-between" id="buenoNav">
+
+                        <!-- Toggler -->
+                        <div id="toggler"><img src="{% static 'img/core-img/toggler.png' %}" alt=""></div>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+
+                            <!-- Close Button -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Nav Start -->
+                            {% include 'navbar.html' %}
+                            <!--<div class="classynav">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Pages</a>
+                                        <ul class="dropdown">
+                                            <li><a href="index.html">Home</a></li>
+                                            <li><a href="catagory.html">Category</a></li>
+                                            <li><a href="catagory-post.html">Category Post</a></li>
+                                            <li><a href="single-post.html">Single Post</a></li>
+                                            <li><a href="receipe.html">Recipe</a></li>
+                                            <li><a href="contact.html">Contact</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Recipes</a>
+                                        <div class="megamenu">
+                                            <ul class="single-mega cn-col-4">
+                                                <li><a href="#">- Recipe</a></li>
+                                                <li><a href="#">- Bread</a></li>
+                                                <li><a href="#">- Breakfast</a></li>
+                                                <li><a href="#">- Meat</a></li>
+                                                <li><a href="#">- Fastfood</a></li>
+                                                <li><a href="#">- Salad</a></li>
+                                                <li><a href="#">- Soup</a></li>
+                                            </ul>
+                                            <ul class="single-mega cn-col-4">
+                                                <li><a href="#">- Recipe</a></li>
+                                                <li><a href="#">- Bread</a></li>
+                                                <li><a href="#">- Breakfast</a></li>
+                                                <li><a href="#">- Meat</a></li>
+                                                <li><a href="#">- Fastfood</a></li>
+                                                <li><a href="#">- Salad</a></li>
+                                                <li><a href="#">- Soup</a></li>
+                                            </ul>
+                                            <ul class="single-mega cn-col-4">
+                                                <li><a href="#">- Recipe</a></li>
+                                                <li><a href="#">- Bread</a></li>
+                                                <li><a href="#">- Breakfast</a></li>
+                                                <li><a href="#">- Meat</a></li>
+                                                <li><a href="#">- Fastfood</a></li>
+                                                <li><a href="#">- Salad</a></li>
+                                                <li><a href="#">- Soup</a></li>
+                                            </ul>
+                                            <ul class="single-mega cn-col-4">
+                                                <li><a href="#">- Recipe</a></li>
+                                                <li><a href="#">- Bread</a></li>
+                                                <li><a href="#">- Breakfast</a></li>
+                                                <li><a href="#">- Meat</a></li>
+                                                <li><a href="#">- Fastfood</a></li>
+                                                <li><a href="#">- Salad</a></li>
+                                                <li><a href="#">- Soup</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><a href="{% static 'single-post.html' %}">Blog</a></li>
+                                    <li><a href="{% static 'contact.html' %}">Contact</a></li>
+                                </ul>-->
+
+                                <!-- Login/Register -->
+                                <!--<div class="login-area">
+                                    <a href="#">Login / Register</a>
+                                </div>
+                            </div>-->
+                            <!-- Nav End -->
+
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+
+    <!-- ##### Treading Post Area Start ##### -->
+    <div class="treading-post-area" id="treadingPost">
+        <div class="close-icon">
+            <i class="fa fa-times"></i>
+        </div>
+
+        <h4>Treading Post</h4>
+
+        <!-- Single Blog Post -->
+        <div class="single-blog-post style-1 d-flex flex-wrap mb-30">
+            <!-- Blog Thumbnail -->
+            <div class="blog-thumbnail">
+                <img src="{% static 'images/masala dosa.jpg' %}" alt="">
+            </div>
+            <!-- Blog Content -->
+            <div class="blog-content">
+                <a href="#" class="post-tag">South Indian</a>
+                <a href="#" class="post-title">Masala Dosa</a>
+                <div class="post-meta">
+                    <a href="#" class="post-date">July 11, 2024</a>
+                    <a href="#" class="post-author">By Antony</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Single Blog Post -->
+        <div class="single-blog-post style-1 d-flex flex-wrap mb-30">
+            <!-- Blog Thumbnail -->
+            <div class="blog-thumbnail">
+                <img src="{% static 'images/strawberry sake.jpg' %}" alt="">
+            </div>
+            <!-- Blog Content -->
+            <div class="blog-content">
+                <a href="#" class="post-tag">Drinks</a>
+                <a href="#" class="post-title">Fresh Strawberry Milkshake</a>
+                <div class="post-meta">
+                    <a href="#" class="post-date">July 11, 2024</a>
+                    <a href="#" class="post-author">By Antony</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Single Blog Post -->
+        <div class="single-blog-post style-1 d-flex flex-wrap mb-30">
+            <!-- Blog Thumbnail -->
+            <div class="blog-thumbnail">
+                <img src="{% static 'images/pizza.jpg' %}" alt="">
+            </div>
+            <!-- Blog Content -->
+            <div class="blog-content">
+                <a href="#" class="post-tag">Junk Food</a>
+                <a href="#" class="post-title">Pizza with extra topins</a>
+                <div class="post-meta">
+                    <a href="#" class="post-date">July 11, 2024</a>
+                    <a href="#" class="post-author">By Antony</a>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+    <!-- ##### Treading Post Area End ##### -->
+
+    <!-- ##### Search Area Start ##### -->
+    <!--<div class="bueno-search-area section-padding-100-0 pb-70 bg-img" style="background-image: url{% static 'img/core-img/pattern.png' %}">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <form action="#" method="post">
+                        <div class="row">
+                            <div class="col-12 col-sm-6 col-lg-3">
+                                <div class="form-group mb-30">
+                                    <select class="form-control" id="recipe">
+                                      <option value="">Recipe</option>
+                                      <option value="">Recipe 1</option>
+                                      <option value="">Recipe 2</option>
+                                      <option value="">Recipe 3</option>
+                                      <option value="">Recipe 4</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-6 col-lg-3">
+                                <div class="form-group mb-30">
+                                    <select class="form-control" id="vegan">
+                                      <option value="">Vegan</option>
+                                      <option value="">Vegan 1</option>
+                                      <option value="">Vegan 2</option>
+                                      <option value="">Vegan 3</option>
+                                      <option value="">Vegan 4</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-6 col-lg-3">
+                                <div class="form-group mb-30">
+                                    <select class="form-control" id="ingredients">
+                                      <option value="">Ingredients</option>
+                                      <option value="">Ingredients 1</option>
+                                      <option value="">Ingredients 2</option>
+                                      <option value="">Ingredients 3</option>
+                                      <option value="">Ingredients 4</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-3">
+                                <div class="form-group mb-30">
+                                    <button class="btn bueno-btn w-100">Search</button>
+                                </div>
+                            </div>-->
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ##### Search Area End ##### -->
+
+    <!-- ##### Contact Area Start ##### -->
+    <section class="contact-area section-padding-10">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="blog-thumbnail mb-50">
+                    <img src="{% static 'images/contact us.jpg' %}" alt="">
+                </div>
+                <div class="col-12 col-lg-8 col-xl-9">
+                    <div class="contact-content mb-100">
+                        <h4 class="mb-10">We love seeing your feedback</h4>
+                        <p>We love hearing from our readers! Whether you have a question, suggestion, or just want to share your culinary experiences, we’re here to connect with you. Here’s how you can reach us:</p>                        <div class="row align-items-center mt-30 mb-50">
+                        <h4 class="mb-30">Get In Touch</h4>
+                        <h5 class="mb-10">Email</h5>
+                        <p>For general inquiries, recipe questions, or feedback, please email us at:</p>
+                        <p>foodiefoodblog@gmail.com</p>    
+                        <h5 class="mb-10">Social Media</h5>
+                        <p class="mb-10">Stay connected with us on social media! Follow, like, and message us on:</p>
+                        <ul>
+                            <li class="mb-10"> Instagram: foodie_food_blog</li>
+                            <li class="mb-10"> Facebook: foodie_food_blog</li>
+                            <li class="mb-10"> Twitter: @foodie_food_blog</li>
+                            <li class="mb-30"> Pinterest: foodie_food_blog</li>
+                            
+                        </ul>
+                        <h5 >Collaborate with Us</h5>
+                        <p>We are always open to collaborations and partnerships. If you’re a brand, fellow blogger, or an influencer looking to work with us, please reach out via email at foodiefoodblog@gmail.com . We are excited to explore opportunities for sponsored posts, product reviews, and other creative collaborations.</p>
+                        
+                        <h5>Submit Your Recipes</h5>
+                        <p class="mb-30">Have a family recipe or a culinary creation you’d like to share? We welcome guest contributions from our readers. Please send your recipes, along with high-quality photos and a brief story behind the dish, to foodiefoodblog@gmail.com Your recipe might be featured on our blog!</p>  
+ 
+                        <h5>Feedback and Suggestions</h5>
+                        <p class="mb-30">Your feedback is valuable to us. If you have any suggestions for improving our blog or if there’s something specific you’d like to see, please let us know. We aim to create content that resonates with you and enhances your culinary journey.</p>
+
+                        <h5>Thank You</h5>
+                        <p>Thank you for visiting our blog and being part of our food-loving community. We look forward to hearing from you and sharing our culinary adventures together.</p>
+
+                            
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-9 col-md-6 col-lg-4 col-xl-3">
+                    <div class="sidebar-area">
+
+                        
+
+                    
+    </section>
+    <!-- ##### Contact Area End ##### -->
+
+   
+    <!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-5">
+                    <!-- Copywrite Text -->
+                    <p class="copywrite-text"><a href="#"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="#" target="_blank">Our Team</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                </div>
+                <div class="col-12 col-sm-7">
+                    <!-- Footer Nav -->
+                    <div class="footer-nav">
+                        <ul>
+                            <li class="active"><a href="#">Home</a></li>
+                            <li><a href="/recipe">Recipes</a></li>
+                            <li><a href="/about">About Us</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="/contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ##### Footer Area Start ##### -->
+
+    <!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="{% static 'js/jquery/jquery-2.2.4.min.js' %}"></script>
+    <!-- Popper js -->
+    <script src="{% static 'js/bootstrap/popper.min.js' %}"></script>
+    <!-- Bootstrap js -->
+    <script src="{% static 'js/bootstrap/bootstrap.min.js' %}"></script>
+    <!-- All Plugins js -->
+    <script src="{% static 'js/plugins/plugins.js' %}"></script>
+    <!-- Active js -->
+    <script src="{% static 'js/active.js' %}"></script>
+</body>
+
+</html>

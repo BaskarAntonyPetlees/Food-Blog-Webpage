@@ -1,0 +1,431 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Foodie|Food Blog</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="{% static 'img/core-img/favicon.ico' %}">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="preloader-content">
+            <h3>Cooking in progress..</h3>
+            <div id="cooking">
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div id="area">
+                    <div id="sides">
+                        <div id="pan"></div>
+                        <div id="handle"></div>
+                    </div>
+                    <div id="pancake">
+                        <div id="pastry"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+
+        <!-- Top Header Area -->
+        <div class="top-header-area bg-img bg-overlay" style="background-image: url(img/bg-img/header.jpg);">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center justify-content-between">
+                    <div class="col-12 col-sm-6">
+                        <!-- Top Social Info -->
+                        <div class="top-social-info">
+                            <a href="https://www.pinterest.com/" data-toggle="tooltip" data-placement="bottom" title="Pinterest"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                            <a href="https://www.facebook.com/" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="https://x.com/?mx=2" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="https://www.linkedin.com/home" data-toggle="tooltip" data-placement="bottom" title="Linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-5 col-xl-4">
+                        <!-- Top Search Area -->
+                        <div class="top-search-area">
+                            <form action="#" method="post">
+                                <input type="search" name="top-search" id="topSearch" placeholder="Search">
+                                <button type="submit" class="btn"><i class="fa fa-search"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Logo Area -->
+        <div class="logo-area">
+            <a href="/"><img src="{% static 'images/logo.png' %}" alt=""></a>
+        </div>
+
+        <!-- Navbar Area -->
+        <div class="bueno-main-menu" id="sticker">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Menu -->
+                    <nav class="classy-navbar justify-content-between" id="buenoNav">
+
+                        <!-- Toggler -->
+                        <div id="toggler"><img src="{% static 'img/core-img/toggler.png' %}" alt=""></div>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+
+                            <!-- Close Button -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Nav Start -->
+                            {% include 'navbar.html' %}           <!-- Include Nav html file -->
+                            
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+
+    <!-- ##### Treading Post Area Start ##### -->
+    <div class="treading-post-area" id="treadingPost">
+        <div class="close-icon">
+            <i class="fa fa-times"></i>
+        </div>
+
+        <h4>Treading Post</h4>
+
+        <!-- Single Blog Post -->
+        <div class="single-blog-post style-1 d-flex flex-wrap mb-30">
+            <!-- Blog Thumbnail -->
+            <div class="blog-thumbnail">
+                <img src="{% static 'images/masala dosa.jpg' %}" alt="">
+            </div>
+            <!-- Blog Content -->
+            <div class="blog-content">
+                <a href="#" class="post-tag">South Indian</a>
+                <a href="#" class="post-title">Masala Dosa</a>
+                <div class="post-meta">
+                    <a href="#" class="post-date">July 11, 2024</a>
+                    <a href="#" class="post-author">By Antony</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Single Blog Post -->
+        <div class="single-blog-post style-1 d-flex flex-wrap mb-30">
+            <!-- Blog Thumbnail -->
+            <div class="blog-thumbnail">
+                <img src="{% static 'images/strawberry sake.jpg' %}" alt="">
+            </div>
+            <!-- Blog Content -->
+            <div class="blog-content">
+                <a href="#" class="post-tag">Drinks</a>
+                <a href="#" class="post-title">Fresh Strawberry Milkshake</a>
+                <div class="post-meta">
+                    <a href="#" class="post-date">July 11, 2024</a>
+                    <a href="#" class="post-author">By Antony</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Single Blog Post -->
+        <div class="single-blog-post style-1 d-flex flex-wrap mb-30">
+            <!-- Blog Thumbnail -->
+            <div class="blog-thumbnail">
+                <img src="{% static 'images/pizza.jpg' %}" alt="">
+            </div>
+            <!-- Blog Content -->
+            <div class="blog-content">
+                <a href="#" class="post-tag">Junk Food</a>
+                <a href="#" class="post-title">Pizza with extra topins</a>
+                <div class="post-meta">
+                    <a href="#" class="post-date">July 11, 2024</a>
+                    <a href="#" class="post-author">By Antony</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ##### Treading Post Area End ##### -->
+
+    <hr>
+
+    <!-- ##### Post Details Area Start ##### -->
+    <section class="post-news-area section-padding-100-0 mb-70">
+        <div class="container">
+            <div class="row justify-content-center">
+                <!-- Post Details Content Area -->
+                <div class="col-1 col-lg-4 col-xl-8">
+                    <div class="post-details-content mb-100">
+                        <div class="blog-thumbnail mb-50">
+                            <img src="{% static 'recipe_image/chicken biryani.jpg' %}" alt="">
+                        </div>
+                        <div class="blog-content">
+                            <a href="#" class="post-tag">The Best</a>
+                            <h4 class="post-title">Tasty Chicken Biryani</h4>
+                            <div class="post-meta mb-50">
+                                <a href="#" class="post-date">July 11, 2024</a>
+                                <a href="#" class="post-author">By Antony</a>
+                            </div>
+                            <h5 class="mb-30">Step 1 : Marinate the Chicken</h5>
+                            <ul>
+                                <li class="mb-15">👉 In a large bowl, mix yogurt, ginger-garlic paste, turmeric powder, red chili powder, garam masala, and salt.</li>
+                                <li class="mb-15">👉 Add chicken pieces to the marinade and mix well to coat.</li>
+                                <li class="mb-30">👉 Cover and refrigerate for at least 1 hour.</li>
+                            </ul>
+                            
+                            <h5 class="mb-30">Step 2 : Cook the Rice</h5>
+                            <ul>
+                                <li class="mb-15">👉 Rinse the basmati rice until the water runs clear.</li>
+                                <li class="mb-15">👉 In a large pot, bring water to a boil. Add cloves, cardamom, bay leaf, cinnamon stick, and salt.</li>
+                                <li class="mb-30">👉 Add the rinsed rice and cook until it is 70% cooked (parboiled). Drain and set aside.</li>
+                            </ul>
+                           
+                            <h5 class="mb-30">Step 3 : Prepare the Biryani</h5>
+                            <ul>
+                                <li class="mb-15">👉 Heat ghee or oil in a large, heavy-bottomed pot.</li>
+                                <li class="mb-15">👉 Add sliced onions and sauté until golden brown.</li>
+                                <li class="mb-15">👉 Add green chilies and tomatoes, and cook until tomatoes are soft.</li>
+                                <li class="mb-15">👉 Add marinated chicken and cook until the chicken is almost done.</li>
+                                <li class="mb-15">👉 Stir in mint and coriander leaves.</li>
+                                <li class="mb-30">👉 Sprinkle biryani masala and mix well</li>
+                            </ul>
+
+                            <h5 class="mb-30">Step 4 : Layer the Biryani</h5>
+                            <ul>
+                                <li class="mb-15">👉 In the same pot, spread half of the parboiled rice over the chicken mixture.</li>
+                                <li class="mb-15">👉 Drizzle half of the saffron milk over the rice.</li>
+                                <li class="mb-15">👉 Add the remaining rice on top and drizzle with the remaining saffron milk.</li>
+                                <li class="mb-30">👉 Cover the pot with a tight-fitting lid. You can seal the edges with dough to trap the steam.</li>
+                            </ul>
+
+                            <h5 class="mb-30">Step 5 : Dum Cooking</h5>
+                            <ul>
+                                <li class="mb-15">👉 Place a tawa (griddle) on low heat and place the biryani pot on top of it.</li>
+                                <li class="mb-30">👉 Cook on low heat (dum) for 20-30 minutes until the rice is fully cooked and flavors are well combined</li>
+                            </ul>
+
+                            <h5 class="mb-30">Step 6 : Serve</h5>
+                            <ul>
+                                <li class="mb-15">👉 Gently fluff the rice with a fork, being careful not to break the grains.</li>
+                                <li class="mb-30">👉 Serve hot with raita, boiled eggs, or a side salad.</li>
+                            </ul>
+
+                            <h5 class="mb-30">Video</h5>
+                            <p>Click on the below video for the video instruction:</p>
+
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/T74qMNYBKGU?si=uj_L1BirvurDzjVo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4 col-xl-4">
+                    <!-- Info -->
+                    <div class="recipe-info">
+                        <h5>Info</h5>
+                        <ul class="info-data">
+                            <li><img src="{% static 'img/core-img/eye.png' %}" alt=""> <span>1,577 Views</span></li>
+                            <li><img src="{% static 'img/core-img/alarm-clock.png' %}" alt=""> <span>1.5 hours</span></li>
+                            <li><img src="{% static 'img/core-img/tray.png' %}" alt=""> <span>Serves 4-6</span></li>
+                            <li><img src="{% static 'img/core-img/sandwich.png' %}" alt=""> <span>Moderate</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Ingredients -->
+                    <div class="ingredients">
+                        <h5><b>Ingredients</b></h5>
+
+                        <h5>For the Chicken Marinade</h5>
+
+                        <!-- Custom Checkbox -->
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                            <label class="custom-control-label" for="customCheck1">500g chicken pieces</label>
+                        </div>
+
+                        <!-- Custom Checkbox -->
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck2">
+                            <label class="custom-control-label" for="customCheck2">1 cup yogurt</label>
+                        </div>
+
+                        <!-- Custom Checkbox -->
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck3">
+                            <label class="custom-control-label" for="customCheck3">2 tbsp ginger-garlic paste</label>
+                        </div>
+
+                        <!-- Custom Checkbox -->
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck4">
+                            <label class="custom-control-label" for="customCheck4">1 tsp turmeric powder</label>
+                        </div>
+
+                        <!-- Custom Checkbox -->
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck5">
+                            <label class="custom-control-label" for="customCheck5">2 tsp red chili powder</label>
+                        </div>
+
+                        <!-- Custom Checkbox -->
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck6">
+                            <label class="custom-control-label" for="customCheck6">1 tsp garam masala powder</label>
+                        </div>
+
+                        <!-- Custom Checkbox -->
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck7">
+                            <label class="custom-control-label" for="customCheck7">Salt to taste</label>
+                        </div>
+
+                        <h5>For the Rice</h5>
+
+                        <!-- Custom Checkbox -->
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck8">
+                            <label class="custom-control-label" for="customCheck8">2 cups basmati rice </label>
+                        </div>
+
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck8">
+                            <label class="custom-control-label" for="customCheck8">4 cups water </label>
+                        </div>
+
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck8">
+                            <label class="custom-control-label" for="customCheck8">2-3 cloves </label>
+                        </div>
+
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck8">
+                            <label class="custom-control-label" for="customCheck8">2-3 cardamom pods </label>
+                        </div>
+
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck8">
+                            <label class="custom-control-label" for="customCheck8">1 bay leaf </label>
+                        </div>
+
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck8">
+                            <label class="custom-control-label" for="customCheck8">1-inch cinnamon stick </label>
+                        </div>
+
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck8">
+                            <label class="custom-control-label" for="customCheck8">Salt to taste </label>
+                        </div>
+
+                        <h5>For the Biryani</h5>
+
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck8">
+                            <label class="custom-control-label" for="customCheck8">2 large onions, thinly sliced </label>
+                        </div>
+
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck8">
+                            <label class="custom-control-label" for="customCheck8">2 tomatoes, chopped </label>
+                        </div>
+
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck8">
+                            <label class="custom-control-label" for="customCheck8">2-3 green chilies, slit </label>
+                        </div>
+
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck8">
+                            <label class="custom-control-label" for="customCheck8">1/2 cup mint leaves, chopped </label>
+                        </div>
+
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck8">
+                            <label class="custom-control-label" for="customCheck8">1/2 cup coriander leaves, chopped </label>
+                        </div>
+
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck8">
+                            <label class="custom-control-label" for="customCheck8">1/2 cup ghee or oil </label>
+                        </div>
+
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck8">
+                            <label class="custom-control-label" for="customCheck8">Saffron strands soaked in 2 tbsp warm milk </label>
+                        </div>
+
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck8">
+                            <label class="custom-control-label" for="customCheck8">1 tsp biryani masala </label>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+    <!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-5">
+                    <!-- Copywrite Text -->
+                    <p class="copywrite-text"><a href="#"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="#" target="_blank">Our Team</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                </div>
+                <div class="col-12 col-sm-7">
+                    <!-- Footer Nav -->
+                    <div class="footer-nav">
+                        <ul>
+                            <li class="active"><a href="#">Home</a></li>
+                            <li><a href="/recipe">Recipes</a></li>
+                            <li><a href="/about">About Us</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="/contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ##### Footer Area Start ##### -->
+
+    <!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="{% static 'js/jquery/jquery-2.2.4.min.js' %}"></script>
+    <!-- Popper js -->
+    <script src="{% static 'js/bootstrap/popper.min.js' %}"></script>
+    <!-- Bootstrap js -->
+    <script src="{% static 'js/bootstrap/bootstrap.min.js' %}"></script>
+    <!-- All Plugins js -->
+    <script src="{% static 'js/plugins/plugins.js' %}"></script>
+    <!-- Active js -->
+    <script src="{% static 'js/active.js' %}"></script>
+</body>
+
+</html>

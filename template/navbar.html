@@ -1,0 +1,39 @@
+
+{% load static %} 
+
+<link rel="stylesheet" href="{% static 'style.css' %}"> 
+<navbar> 
+<div class="classynav">
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About Us</a></li>
+        <li><a href="#">Pages</a>
+            <ul class="dropdown">
+                <li><a href="/">Home</a></li>
+                <li><a href="/category">Category</a></li>
+                <li><a href="/recipe">Recipe</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Recipes</a>
+            <div class="megamenu">
+                <ul class="single-mega cn-col-4">
+                    <li><a href="#">- Recipe</a></li> 
+                    <li><a href="/recipe1">- Chicken Biryani</a></li>
+                    <li><a href="/recipe2">- Veg Salad</a></li>
+                    <li><a href="/recipe3">- Ramen Noodles</a></li>
+                    <li><a href="/recipe4">- Chicken Gravy</a></li>
+                    <li><a href="/recipe5">- momos</a></li>
+                </ul>
+                
+            </div>
+        </li>
+        <li><a href="/contact">Contact</a></li>
+    </ul>
+
+    <!-- Login/Register -->
+    <div class="login-area">
+        <a href="/login">Login / Register</a>
+    </div>
+</div>
+</navbar> 

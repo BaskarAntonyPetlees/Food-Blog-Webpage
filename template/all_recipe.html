@@ -1,0 +1,986 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Foodie|Food Blog All Recipe</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="{% static 'img/core-img/favicon.ico' %}">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="preloader-content">
+            <h3>Cooking in progress..</h3>
+            <div id="cooking">
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div id="area">
+                    <div id="sides">
+                        <div id="pan"></div>
+                        <div id="handle"></div>
+                    </div>
+                    <div id="pancake">
+                        <div id="pastry"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+
+        <!-- Top Header Area -->
+        <div class="top-header-area bg-img bg-overlay" style="background-image: url(img/bg-img/header.jpg);">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center justify-content-between">
+                    <div class="col-12 col-sm-6">
+                        <!-- Top Social Info -->
+                        <div class="top-social-info">
+                            <a href="https://www.pinterest.com/" data-toggle="tooltip" data-placement="bottom" title="Pinterest"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                            <a href="https://www.facebook.com/" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="https://x.com/?mx=2" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="https://www.linkedin.com/home" data-toggle="tooltip" data-placement="bottom" title="Linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-5 col-xl-4">
+                        <!-- Top Search Area -->
+                        <div class="top-search-area">
+                            <form action="#" method="post">
+                                <input type="search" name="top-search" id="topSearch" placeholder="Search">
+                                <button type="submit" class="btn"><i class="fa fa-search"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Logo Area -->
+        <div class="logo-area">
+            <a href="/"><img src="{% static 'images/logo.png' %}" alt=""></a>
+        </div>
+
+        <!-- Navbar Area -->
+        <div class="bueno-main-menu" id="sticker">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Menu -->
+                    <nav class="classy-navbar justify-content-between" id="buenoNav">
+
+                        <!-- Toggler -->
+                        <div id="toggler"><img src="{% static 'img/core-img/toggler.png' %}" alt=""></div>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+
+                            <!-- Close Button -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Nav Start -->
+                            {% include 'navbar.html' %}           <!-- Include Nav html file -->
+                            
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+
+    <!-- ##### Treading Post Area Start ##### -->
+    <div class="treading-post-area" id="treadingPost">
+        <div class="close-icon">
+            <i class="fa fa-times"></i>
+        </div>
+
+        <h4>Treading Post</h4>
+
+        <!-- Single Blog Post -->
+        <div class="single-blog-post style-1 d-flex flex-wrap mb-30">
+            <!-- Blog Thumbnail -->
+            <div class="blog-thumbnail">
+                <img src="{% static 'images/masala dosa.jpg' %}" alt="">
+            </div>
+            <!-- Blog Content -->
+            <div class="blog-content">
+                <a href="#" class="post-tag">South Indian</a>
+                <a href="#" class="post-title">Masala Dosa</a>
+                <div class="post-meta">
+                    <a href="#" class="post-date">July 11, 2024</a>
+                    <a href="#" class="post-author">By Antony</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Single Blog Post -->
+        <div class="single-blog-post style-1 d-flex flex-wrap mb-30">
+            <!-- Blog Thumbnail -->
+            <div class="blog-thumbnail">
+                <img src="{% static 'images/strawberry sake.jpg' %}" alt="">
+            </div>
+            <!-- Blog Content -->
+            <div class="blog-content">
+                <a href="#" class="post-tag">Drinks</a>
+                <a href="#" class="post-title">Fresh Strawberry Milkshake</a>
+                <div class="post-meta">
+                    <a href="#" class="post-date">July 11, 2024</a>
+                    <a href="#" class="post-author">By Antony</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Single Blog Post -->
+        <div class="single-blog-post style-1 d-flex flex-wrap mb-30">
+            <!-- Blog Thumbnail -->
+            <div class="blog-thumbnail">
+                <img src="{% static 'images/pizza.jpg' %}" alt="">
+            </div>
+            <!-- Blog Content -->
+            <div class="blog-content">
+                <a href="#" class="post-tag">Junk Food</a>
+                <a href="#" class="post-title">Pizza with extra topins</a>
+                <div class="post-meta">
+                    <a href="#" class="post-date">July 11, 2024</a>
+                    <a href="#" class="post-author">By Antony</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ##### Treading Post Area End ##### -->
+
+    <hr class="mb-50">
+            <center><h1 >Tasty Chettinad Chicken Gravy</h1></center>
+    <!-- ##### Post Details Area Start ##### -->
+    <section class="post-news-area section-padding-100-0 mb-70">
+        <div class="container">
+            <div class="row justify-content-center">
+                <!-- Post Details Content Area -->
+                <div class="col-1 col-lg-4 col-xl-8">
+                    <div class="post-details-content mb-100">
+                        <div class="blog-thumbnail mb-50">
+                            <img src="{% static 'recipe_image/chiken gravy.jpg' %}" alt="">
+                        </div>
+                        <div class="blog-content">
+                            <a href="#" class="post-tag">The Spicy & Juicy</a>
+                            <h4 class="post-title">Tasty Chettinad Chicken Gravy</h4>
+                            <div class="post-meta mb-50">
+                                <a href="#" class="post-date">July 11, 2024</a>
+                                <a href="#" class="post-author">By Antony</a>
+                            </div>
+                            <h5 class="mb-15">Step 1 : Prepare the Chettinad Spice Paste</h5>
+                            <ul>
+                                <li class="mb-15">👉 Heat oil in a pan and add fennel seeds, cumin seeds, and black pepper.</li>
+                                <li class="mb-15">👉 Add whole garam masala, red chilies, coriander seeds, and kalpasi.</li>
+                                <li class="mb-30">👉 Add curry leaves and grated coconut, roasting until lightly golden. Cool the mixture and grind it into a fine paste.</li>
+                            </ul>
+                            
+                            <h5 class="mb-15">Step 2 : Make the Masala</h5>
+                            <ul>
+                                <li class="mb-15">👉 In an earthenware pan, heat oil, and add fennel seeds, bay leaves, cardamom, cloves, onions, and curry leaves. Sauté until onions are golden brown.</li>
+                                <li class="mb-15">👉 Add ginger garlic paste and cook for 2 minutes, then add tomatoes.</li>
+                                <li class="mb-30">👉 Add turmeric powder, coriander powder, chili powder, and salt. Sauté for 2 minutes and add water to simmer the masala.</li>
+                            </ul>
+                           
+                            <h5 class="mb-15">Step 3 : Cook the Chicken</h5>
+                            <ul>
+                                <li class="mb-15">👉 Add cleaned chicken pieces to the masala and mix thoroughly without adding water. Add finely chopped coriander leaves.</li>
+                                <li class="mb-30">👉 Add the prepared spice paste to the chicken, mix well, and cook covered with a lid. Once the chicken is done, add curry leaves, coriander leaves, and a little gingelly oil.</li>
+
+                            </ul>
+
+                            <h5 class="mb-15">Step 4 : Serve</h5>
+                            <ul>
+                                <li class="mb-30">👉 Serve this spicy, flavorful Chettinad Chicken Gravy with hot rice, crispy dosa, or soft idly.</li>
+                            
+                            </ul>
+
+                            <h5 class="mb-15">Video</h5>
+                            <p>Click on the below video for the video instruction:</p>
+
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/RGN5kdNqzGc?si=z0swbNFr6g2W7aB0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4 col-xl-4">
+                    <!-- Info -->
+                    <div class="recipe-info">
+                        <h5>Info</h5>
+                        <ul class="info-data">
+                            <li><img src="{% static 'img/core-img/eye.png' %}" alt=""> <span>1,000 Views</span></li>
+                            <li><img src="{% static 'img/core-img/alarm-clock.png' %}" alt=""> <span>40 minutes</span></li>
+                            <li><img src="{% static 'img/core-img/tray.png' %}" alt=""> <span>Serves 4-6</span></li>
+                            <li><img src="{% static 'img/core-img/sandwich.png' %}" alt=""> <span>Intermediate</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Ingredients -->
+                    <div class="ingredients">
+                        <h5>Ingredients</h5>
+
+                        <!-- Custom Checkbox -->
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                            <label class="custom-control-label" for="customCheck1">1 Kg Chicken</label>
+                        </div>
+
+                        <!-- Custom Checkbox -->
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck2">
+                            <label class="custom-control-label" for="customCheck2">1/2 Shell Grated Coconut</label>
+                        </div>
+
+                        <!-- Custom Checkbox -->
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck3">
+                            <label class="custom-control-label" for="customCheck3">3 Onions</label>
+                        </div>
+
+                        <!-- Custom Checkbox -->
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck4">
+                            <label class="custom-control-label" for="customCheck4">4 Tomatoes</label>
+                        </div>
+
+                        <!-- Custom Checkbox -->
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck5">
+                            <label class="custom-control-label" for="customCheck5">15 to 20 Red Chilies</label>
+                        </div>
+
+                        <!-- Custom Checkbox -->
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck6">
+                            <label class="custom-control-label" for="customCheck6">1/4 Tsp Black Pepper</label>
+                        </div>
+
+                        <!-- Custom Checkbox -->
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck7">
+                            <label class="custom-control-label" for="customCheck7">3/4 Tbsp Coriander Seeds</label>
+                        </div>
+
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck7">
+                            <label class="custom-control-label" for="customCheck7">10 to 15 Grams Whole Garam Masala</label>
+                        </div>
+
+                        <!-- Custom Checkbox -->
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck8">
+                            <label class="custom-control-label" for="customCheck8">5 to 6 No's Kalpasi (Black Stone Flower) </label>
+                        </div>
+
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck8">
+                            <label class="custom-control-label" for="customCheck8">3/4 Tbsp Fennel Seeds </label>
+                        </div>
+
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck8">
+                            <label class="custom-control-label" for="customCheck8">3/4 Tbsp Cumin Seeds </label>
+                        </div>
+
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck8">
+                            <label class="custom-control-label" for="customCheck8">1/4 Tbsp Turmeric Powder </label>
+                        </div>
+
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck8">
+                            <label class="custom-control-label" for="customCheck8">3/4 Tbsp Chili Powder </label>
+                        </div>
+
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck8">
+                            <label class="custom-control-label" for="customCheck8">3/4 Tbsp Coriander Powder </label>
+                        </div>
+
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck8">
+                            <label class="custom-control-label" for="customCheck8">Salt (to taste) </label>
+                        </div>
+
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck8">
+                            <label class="custom-control-label" for="customCheck8">Coriander Leaves (as required) </label>
+                        </div>
+
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck8">
+                            <label class="custom-control-label" for="customCheck8">Curry Leaves (as required) </label>
+                        </div>
+                        
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck8">
+                            <label class="custom-control-label" for="customCheck8">1 1/2 Tbsp Ginger Garlic Paste </label>
+                        </div>
+
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck8">
+                            <label class="custom-control-label" for="customCheck8">Gingelly Oil (for cooking) </label>
+                        </div>
+                        
+
+
+                    </div>
+                </div>
+
+    <!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="{% static 'js/jquery/jquery-2.2.4.min.js' %}"></script>
+    <!-- Popper js -->
+    <script src="{% static 'js/bootstrap/popper.min.js' %}"></script>
+    <!-- Bootstrap js -->
+    <script src="{% static 'js/bootstrap/bootstrap.min.js' %}"></script>
+    <!-- All Plugins js -->
+    <script src="{% static 'js/plugins/plugins.js' %}"></script>
+    <!-- Active js -->
+    <script src="{% static 'js/active.js' %}"></script>
+</body>
+
+<hr class="mb-50">
+<center><h1 >Ramen Noodels</h1></center>
+
+    <!-- ##### Post Details Area Start ##### -->
+    <section class="post-news-area section-padding-100-0 mb-70">
+        <div class="container">
+            <div class="row justify-content-center">
+                <!-- Post Details Content Area -->
+                <div class="col-1 col-lg-4 col-xl-8">
+                    <div class="post-details-content mb-100">
+                        <div class="blog-thumbnail mb-50">
+                            <img src="{% static 'recipe_image/ramen noodels.jpg' %}" alt="">
+                        </div>
+                        <div class="blog-content">
+                            <a href="#" class="post-tag">Hot & Spicy</a>
+                            <h4 class="post-title">Soy Garlic Chicken Ramen</h4>
+                            <div class="post-meta mb-50">
+                                <a href="#" class="post-date">July 11, 2024</a>
+                                <a href="#" class="post-author">By Antony</a>
+                            </div>
+                            <h5 class="mb-15">Step 1 : Prepare the Broth</h5>
+                            <ul>
+                                <li class="mb-15">👉 In a large pot, combine the broth, water, soy sauce, miso paste, sesame oil, garlic, ginger, and green onion. </li>
+                                <li class="mb-30">👉 Bring to a simmer over medium heat and cook for 10-15 minutes to allow the flavors to meld. Adjust seasoning with fish sauce and rice vinegar if using.</li>
+                            </ul>
+                            
+                            <h5 class="mb-15">Step 2 : Cook the Ramen</h5>
+                            <ul>
+                                <li class="mb-30">👉 In a separate pot, bring water to a boil and cook the ramen noodles according to the package instructions. Drain and set aside.</li>
+                            </ul>
+                           
+                            <h5 class="mb-15">Step 3 : Assemble the Ramen Bowls</h5>
+                            <ul>
+                                <li class="mb-15">👉 Divide the cooked noodles into bowls.</li>
+                                <li class="mb-30">👉 Arrange the chicken (or tofu), mushrooms, spinach, carrots, corn, and boiled egg halves over the noodles.</li>
+                            </ul>
+
+                            <h5 class="mb-15">Step 4 : Serve</h5>
+                            <ul>
+                                <li class="mb-15">👉 Ladle the hot broth over the noodles and toppings.</li>
+                                <li class="mb-30">👉 Garnish with nori, sesame seeds, chili oil, and sliced jalapeños if desired.</li>
+                            </ul>
+
+                            <h5 class="mb-15">Video</h5>
+                            <p>Click on the below video for the video instruction:</p>
+
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/BfuPzp8gGnQ?si=Tyu-Q5XKqUIzp4R8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4 col-xl-4">
+                    <!-- Info -->
+                    <div class="recipe-info">
+                        <h5>Info</h5>
+                        <ul class="info-data">
+                            <li><img src="{% static 'img/core-img/eye.png' %}" alt=""> <span>3,000 Views</span></li>
+                            <li><img src="{% static 'img/core-img/alarm-clock.png' %}" alt=""> <span>40 minutes</span></li>
+                            <li><img src="{% static 'img/core-img/tray.png' %}" alt=""> <span>Serves 2</span></li>
+                            <li><img src="{% static 'img/core-img/sandwich.png' %}" alt=""> <span>Easy</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Ingredients -->
+                    <div class="ingredients">
+                        <h5>Ingredients</h5>
+
+                        <h5>For the Broth</h5>
+
+                        <!-- Custom Checkbox -->
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                            <label class="custom-control-label" for="customCheck1">4 cups chicken or vegetable broth</label>
+                        </div>
+
+                        <!-- Custom Checkbox -->
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck2">
+                            <label class="custom-control-label" for="customCheck2">2 cups water</label>
+                        </div>
+
+                        <!-- Custom Checkbox -->
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck3">
+                            <label class="custom-control-label" for="customCheck3">2 tablespoons soy sauce</label>
+                        </div>
+
+                        <!-- Custom Checkbox -->
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck4">
+                            <label class="custom-control-label" for="customCheck4">1 tablespoon miso paste</label>
+                        </div>
+
+                        <!-- Custom Checkbox -->
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck5">
+                            <label class="custom-control-label" for="customCheck5">1 teaspoon sesame oil</label>
+                        </div>
+
+                        <!-- Custom Checkbox -->
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck6">
+                            <label class="custom-control-label" for="customCheck6">1 clove garlic, minced</label>
+                        </div>
+
+                        <!-- Custom Checkbox -->
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck7">
+                            <label class="custom-control-label" for="customCheck7">1-inch piece of ginger, minced</label>
+                        </div>
+
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck7">
+                            <label class="custom-control-label" for="customCheck7">1 green onion, sliced</label>
+                        </div>
+
+                        <!-- Custom Checkbox -->
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck8">
+                            <label class="custom-control-label" for="customCheck8">1 tablespoon fish sauce, 1 tablespoon rice vinegar (Optional)</label>
+                        </div>
+
+                        <h5>For the Ramen</h5>
+
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck8">
+                            <label class="custom-control-label" for="customCheck8">2 packages of ramen noodles (discard the seasoning packets) </label>
+                        </div>
+
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck8">
+                            <label class="custom-control-label" for="customCheck8">1 cup cooked chicken, pork(sliced) </label>
+                        </div>
+
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck8">
+                            <label class="custom-control-label" for="customCheck8">1/2 cup sliced mushrooms </label>
+                        </div>
+
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck8">
+                            <label class="custom-control-label" for="customCheck8">1/2 cup spinach or bok choy </label>
+                        </div>
+
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck8">
+                            <label class="custom-control-label" for="customCheck8">1/2 cup shredded carrots </label>
+                        </div>
+
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck8">
+                            <label class="custom-control-label" for="customCheck8">1/2 cup corn kernels </label>
+                        </div>
+
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck8">
+                            <label class="custom-control-label" for="customCheck8">2 boiled eggs (halved)</label>
+                        </div>
+
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck8">
+                            <label class="custom-control-label" for="customCheck8">Nori (seaweed), sesame seeds, chili oil, sliced jalapeños (Optional) </label>
+                        </div>
+                        
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck8">
+                            <label class="custom-control-label" for="customCheck8">1 1/2 Tbsp Ginger Garlic Paste </label>
+                        </div>
+
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck8">
+                            <label class="custom-control-label" for="customCheck8">Gingelly Oil (for cooking) </label>
+                        </div>
+                    </div>
+                </div>
+
+    <!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="{% static 'js/jquery/jquery-2.2.4.min.js' %}"></script>
+    <!-- Popper js -->
+    <script src="{% static 'js/bootstrap/popper.min.js' %}"></script>
+    <!-- Bootstrap js -->
+    <script src="{% static 'js/bootstrap/bootstrap.min.js' %}"></script>
+    <!-- All Plugins js -->
+    <script src="{% static 'js/plugins/plugins.js' %}"></script>
+    <!-- Active js -->
+    <script src="{% static 'js/active.js' %}"></script>
+</body>
+
+<hr class="mb-50">
+<center><h1>Vegetable Manchow Soup</h1></center>
+
+ <!-- ##### Post Details Area Start ##### -->
+ <section class="post-news-area section-padding-100-0 mb-70">
+    <div class="container">
+        <div class="row justify-content-center">
+            <!-- Post Details Content Area -->
+            <div class="col-1 col-lg-4 col-xl-8">
+                <div class="post-details-content mb-100">
+                    <div class="blog-thumbnail mb-50">
+                        <img src="{% static 'recipe_image/vegetable soup.jpg' %}" alt="">
+                    </div>
+                    <div class="blog-content">
+                        <a href="#" class="post-tag">The Spicy & Juicy</a>
+                        <h4 class="post-title">Vegetable Manchow Soup</h4>
+                        <div class="post-meta mb-50">
+                            <a href="#" class="post-date">July 11, 2024</a>
+                            <a href="#" class="post-author">By Antony</a>
+                        </div>
+                        <h5 class="mb-15">Step 1 : Heat Oil</h5>
+                        <ul>
+                            <li class="mb-30">👉 In a large pan, heat the oil over medium heat.</li>
+                        </ul>
+                        
+                        <h5 class="mb-15">Step 2 : Sauté Aromatic</h5>
+                        <ul>
+                            <li class="mb-30">👉 Add the chopped garlic, ginger, and green chilies. Sauté for a minute until fragrant.</li>
+                        </ul>
+                       
+                        <h5 class="mb-15">Step 3 : Cook Onions</h5>
+                        <ul>
+                            <li class="mb-30">👉 Add the chopped onions and sauté until they turn translucent.</li>
+                        </ul>
+
+                        <h5 class="mb-15">Step 4 : Add Vegetables</h5>
+                        <ul>
+                            <li class="mb-30">👉 Add the finely chopped mixed vegetables and the whites of the spring onions. Stir-fry for 3-4 minutes.</li>
+                        </ul>
+
+                        <h5 class="mb-15">Step 5 : Flavorings</h5>
+                        <ul>
+                            <li class="mb-30">👉 Add soy sauce, chili sauce, vinegar, salt, and black pepper powder. Mix well.</li>
+                        </ul>
+
+                        <h5 class="mb-15">Step 6 : Add Stock</h5>
+                        <ul>
+                            <li class="mb-30">👉 Pour in the vegetable stock or water. Bring the soup to a boil, then reduce the heat and let it simmer for 5-7 minutes until the vegetables are cooked but still slightly crunchy.</li>
+                        </ul>
+
+                        <h5 class="mb-15">Step 7 : Thicken Soup</h5>
+                        <ul>
+                            <li class="mb-30">👉 Stir in the cornflour mixture to thicken the soup. Cook for another 2-3 minutes, stirring continuously.</li>
+                        </ul>
+
+                        <h5 class="mb-15">Step 8 : Adjust Seasoning</h5>
+                        <ul>
+                            <li class="mb-30">👉 Taste and adjust the seasoning if needed.</li>
+                        </ul>
+
+                        <h5 class="mb-15">Step 9 : Finish with Spring Onions</h5>
+                        <ul>
+                            <li class="mb-30">👉 Add the greens of the spring onions and mix well.</li>
+                        </ul>
+
+                        <h5 class="mb-15">Step 10 : Serve</h5>
+                        <ul>
+                            <li class="mb-30">👉 Serve hot, garnished with fresh coriander leaves and topped with crispy fried noodles if using.</li>
+                        </ul>
+
+                        <h5 class="mb-15">Video</h5>
+                        <p>Click on the below video for the video instruction:</p>
+
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/POVVG4PDISM?si=n7RPgeYfr6bbtOpD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-4 col-xl-4">
+                <!-- Info -->
+                <div class="recipe-info">
+                    <h5>Info</h5>
+                    <ul class="info-data">
+                        <li><img src="{% static 'img/core-img/eye.png' %}" alt=""> <span>5,00 Views</span></li>
+                        <li><img src="{% static 'img/core-img/alarm-clock.png' %}" alt=""> <span>35 minutes</span></li>
+                        <li><img src="{% static 'img/core-img/tray.png' %}" alt=""> <span>Serves 2</span></li>
+                        <li><img src="{% static 'img/core-img/sandwich.png' %}" alt=""> <span>Easy</span></li>
+                    </ul>
+                </div>
+
+                <!-- Ingredients -->
+                <div class="ingredients">
+                    <h5>Ingredients</h5>
+
+                    <!-- Custom Checkbox -->
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                        <label class="custom-control-label" for="customCheck1">Some boiled noodles (Hakka or any other noodles)</label>
+                    </div>
+
+                    <!-- Custom Checkbox -->
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck2">
+                        <label class="custom-control-label" for="customCheck2">2 tablespoons oil</label>
+                    </div>
+
+                    <!-- Custom Checkbox -->
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck3">
+                        <label class="custom-control-label" for="customCheck3">1/4 Cup Spring Onion's white portion</label>
+                    </div>
+
+                    <!-- Custom Checkbox -->
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck4">
+                        <label class="custom-control-label" for="customCheck4">1 Tbsp sliced garlic</label>
+                    </div>
+
+                    <!-- Custom Checkbox -->
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck5">
+                        <label class="custom-control-label" for="customCheck5">1 Tbsp ginger paste</label>
+                    </div>
+
+                    <!-- Custom Checkbox -->
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck6">
+                        <label class="custom-control-label" for="customCheck6">1/2 Cup finely chopped carrot</label>
+                    </div>
+
+                    <!-- Custom Checkbox -->
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck7">
+                        <label class="custom-control-label" for="customCheck7">1/2 Cup finely chopped French beans</label>
+                    </div>
+
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck7">
+                        <label class="custom-control-label" for="customCheck7">1/4 Cup Spring onion - green portion</label>
+                    </div>
+
+                    <!-- Custom Checkbox -->
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck8">
+                        <label class="custom-control-label" for="customCheck8">1 Small green chilli - chopped </label>
+                    </div>
+
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck8">
+                        <label class="custom-control-label" for="customCheck8">1/2 Cup thinly sliced cabbage </label>
+                    </div>
+
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck8">
+                        <label class="custom-control-label" for="customCheck8">1 Tbsp crushed black pepper </label>
+                    </div>
+
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck8">
+                        <label class="custom-control-label" for="customCheck8">1 Tbsp red chilli powder </label>
+                    </div>
+
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck8">
+                        <label class="custom-control-label" for="customCheck8">3/4 Tbsp Chili Powder </label>
+                    </div>
+
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck8">
+                        <label class="custom-control-label" for="customCheck8">3 Cups of water </label>
+                    </div>
+
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck8">
+                        <label class="custom-control-label" for="customCheck8">2 Tbsp Soya sauce </label>
+                    </div>
+
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck8">
+                        <label class="custom-control-label" for="customCheck8">1/2 Tbsp vinegar - Using white vinegar </label>
+                    </div>
+
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck8">
+                        <label class="custom-control-label" for="customCheck8">1 Maggi Veg Cube (Veg stock cube) </label>
+                    </div>
+                    
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck8">
+                        <label class="custom-control-label" for="customCheck8">3 Tbsp cornflour mixed in 2 Tbsp water </label>
+                    </div>
+
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck8">
+                        <label class="custom-control-label" for="customCheck8">Salt (to taste) </label>
+                    </div>
+
+                </div>
+            </div>
+
+<!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="{% static 'js/jquery/jquery-2.2.4.min.js' %}"></script>
+    <!-- Popper js -->
+    <script src="{% static 'js/bootstrap/popper.min.js' %}"></script>
+    <!-- Bootstrap js -->
+    <script src="{% static 'js/bootstrap/bootstrap.min.js' %}"></script>
+    <!-- All Plugins js -->
+    <script src="{% static 'js/plugins/plugins.js' %}"></script>
+    <!-- Active js -->
+    <script src="{% static 'js/active.js' %}"></script>
+</body>
+
+<hr class="mb-50">
+<center><h1>Tasty Samosa</h1></center>
+
+    <!-- ##### Post Details Area Start ##### -->
+    <section class="post-news-area section-padding-100-0 mb-70">
+        <div class="container">
+            <div class="row justify-content-center">
+                <!-- Post Details Content Area -->
+                <div class="col-1 col-lg-4 col-xl-8">
+                    <div class="post-details-content mb-100">
+                        <div class="blog-thumbnail mb-50">
+                            <img src="{% static 'recipe_image/samosa.jpg' %}" alt="">
+                        </div>
+                        <div class="blog-content">
+                            <a href="#" class="post-tag">The Snacks</a>
+                            <h4 class="post-title">Tasty Samosa</h4>
+                            <div class="post-meta mb-50">
+                                <a href="#" class="post-date">July 11, 2024</a>
+                                <a href="#" class="post-author">By Antony</a>
+                            </div>
+                            <h5 class="mb-15">Step 1 : Prepare the Dough</h5>
+                            <ul>
+                                <li class="mb-15">👉 In a bowl, mix flour, salt, and oil/ghee. Rub the mixture with your fingers until it resembles breadcrumbs.</li> 
+                                <li class="mb-30">👉 Add water little by little to form a stiff dough. Cover and set aside for 30 minutes.</li>
+                            </ul>
+                            
+                            <h5 class="mb-15">Step 2 : Prepare the Filling</h5>
+                            <ul>
+                                <li class="mb-15">👉 Heat oil in a pan and add cumin and fennel seeds. Once they splutter, add crushed coriander seeds, ginger, and green chilies. Sauté for a minute.</li>
+                                <li class="mb-15">👉 Add turmeric powder, garam masala, and amchur powder. Mix well.</li>
+                                <li class="mb-30">👉 Add mashed potatoes and peas. Mix thoroughly. Add salt and fresh coriander leaves. Cook for a few minutes until the mixture is well combined. Let it cool.</li>
+                            </ul>
+                           
+                            <h5 class="mb-15">Step 3 : Assemble the Samosas</h5>
+                            <ul>
+                                <li class="mb-15">👉 Divide the dough into equal parts and roll into balls. Roll each ball into a thin oval shape.</li>
+                                <li class="mb-15">👉  Cut the oval in half. Take one half and form a cone, sealing the edge with water.</li>
+                                <li class="mb-30">👉  Fill the cone with the potato mixture and seal the top edge with water. Repeat with remaining dough and filling.</li>
+                            </ul>
+
+                            <h5 class="mb-15">Step 4 : Fry the Samosas</h5>
+                            <ul>
+                                <li class="mb-15">👉 Heat oil in a deep pan or wok. Once hot, reduce the heat to medium and fry the samosas until golden brown and crisp.</li> 
+                                <li class="mb-30">👉 Remove and drain on paper towels.</li>
+                            </ul>
+
+                            <h5 class="mb-15">Step 5 : Fry the Samosas</h5>
+                            <ul>
+                                <li class="mb-15">👉 Serve hot with mint chutney, tamarind chutney, or ketchup.</li> 
+                            </ul>
+
+                            <h5 class="mb-15">Video</h5>
+                            <p>Click on the below video for the video instruction:</p>
+
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/3OZn-iCGf5s?si=8DPotmb_42Yx_B61" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4 col-xl-4">
+                    <!-- Info -->
+                    <div class="recipe-info">
+                        <h5>Info</h5>
+                        <ul class="info-data">
+                            <li><img src="{% static 'img/core-img/eye.png' %}" alt=""> <span>5,000 Views</span></li>
+                            <li><img src="{% static 'img/core-img/alarm-clock.png' %}" alt=""> <span>1 hour</span></li>
+                            <li><img src="{% static 'img/core-img/tray.png' %}" alt=""> <span>Serves 4-6</span></li>
+                            <li><img src="{% static 'img/core-img/sandwich.png' %}" alt=""> <span>Moderate</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Ingredients -->
+                    <div class="ingredients">
+                        <h5>Ingredients</h5>
+
+                        <h5>For the Dough</h5>
+
+                        <!-- Custom Checkbox -->
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                            <label class="custom-control-label" for="customCheck1">2 cups all-purpose flour</label>
+                        </div>
+
+                        <!-- Custom Checkbox -->
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck2">
+                            <label class="custom-control-label" for="customCheck2">2 tablespoons oil or ghee</label>
+                        </div>
+
+                        <!-- Custom Checkbox -->
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck3">
+                            <label class="custom-control-label" for="customCheck3">1/2 teaspoon salt</label>
+                        </div>
+
+                        <!-- Custom Checkbox -->
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck4">
+                            <label class="custom-control-label" for="customCheck4">Water (as needed)</label>
+                        </div>
+
+                        <h5>For the Filling</h5>
+
+                        <!-- Custom Checkbox -->
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck5">
+                            <label class="custom-control-label" for="customCheck5">2 tablespoons oil</label>
+                        </div>
+
+                        <!-- Custom Checkbox -->
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck6">
+                            <label class="custom-control-label" for="customCheck6">1 teaspoon cumin seeds</label>
+                        </div>
+
+                        <!-- Custom Checkbox -->
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck7">
+                            <label class="custom-control-label" for="customCheck7">1 teaspoon fennel seeds (optional)</label>
+                        </div>
+
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck7">
+                            <label class="custom-control-label" for="customCheck7">1 tablespoon crushed coriander seeds</label>
+                        </div>
+
+                        <!-- Custom Checkbox -->
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck8">
+                            <label class="custom-control-label" for="customCheck8">2 teaspoons ginger, finely chopped </label>
+                        </div>
+
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck8">
+                            <label class="custom-control-label" for="customCheck8">1-2 green chilies, finely chopped </label>
+                        </div>
+
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck8">
+                            <label class="custom-control-label" for="customCheck8">1/2 teaspoon turmeric powder </label>
+                        </div>
+
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck8">
+                            <label class="custom-control-label" for="customCheck8">1 teaspoon garam masala </label>
+                        </div>
+
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck8">
+                            <label class="custom-control-label" for="customCheck8">1 teaspoon dry mango powder (amchur) or lemon juice </label>
+                        </div>
+
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck8">
+                            <label class="custom-control-label" for="customCheck8">2 cups boiled and mashed potatoes </label>
+                        </div>
+
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck8">
+                            <label class="custom-control-label" for="customCheck8">1/2 cup boiled peas </label>
+                        </div>
+
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck8">
+                            <label class="custom-control-label" for="customCheck8">Salt (to taste) </label>
+                        </div>
+
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck8">
+                            <label class="custom-control-label" for="customCheck8">Fresh coriander leaves, chopped </label>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+    <!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-5">
+                    <!-- Copywrite Text -->
+                    <p class="copywrite-text"><a href="#"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="#" target="_blank">Our Team</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                </div>
+                <div class="col-12 col-sm-7">
+                    <!-- Footer Nav -->
+                    <div class="footer-nav">
+                        <ul>
+                            <li class="active"><a href="#">Home</a></li>
+                            <li><a href="/recipe">Recipes</a></li>
+                            <li><a href="/about">About Us</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="/contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ##### Footer Area Start ##### -->
+
+    <!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="{% static 'js/jquery/jquery-2.2.4.min.js' %}"></script>
+    <!-- Popper js -->
+    <script src="{% static 'js/bootstrap/popper.min.js' %}"></script>
+    <!-- Bootstrap js -->
+    <script src="{% static 'js/bootstrap/bootstrap.min.js' %}"></script>
+    <!-- All Plugins js -->
+    <script src="{% static 'js/plugins/plugins.js' %}"></script>
+    <!-- Active js -->
+    <script src="{% static 'js/active.js' %}"></script>
+</body>
+
+</html>

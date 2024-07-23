@@ -1,0 +1,280 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Foodie|Food Blog</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="{% static 'img/core-img/favicon.ico' %}">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="preloader-content">
+            <h3>Cooking in progress..</h3>
+            <div id="cooking">
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div id="area">
+                    <div id="sides">
+                        <div id="pan"></div>
+                        <div id="handle"></div>
+                    </div>
+                    <div id="pancake">
+                        <div id="pastry"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+
+        <!-- Top Header Area -->
+        <div class="top-header-area bg-img bg-overlay" style="background-image: url(img/bg-img/header.jpg);">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center justify-content-between">
+                    <div class="col-12 col-sm-6">
+                        <!-- Top Social Info -->
+                        <div class="top-social-info">
+                            <a href="https://www.pinterest.com/" data-toggle="tooltip" data-placement="bottom" title="Pinterest"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                            <a href="https://www.facebook.com/" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="https://x.com/?mx=2" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="https://www.linkedin.com/home" data-toggle="tooltip" data-placement="bottom" title="Linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-5 col-xl-4">
+                        <!-- Top Search Area -->
+                        <div class="top-search-area">
+                            <form action="#" method="post">
+                                <input type="search" name="top-search" id="topSearch" placeholder="Search">
+                                <button type="submit" class="btn"><i class="fa fa-search"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Logo Area -->
+        <div class="logo-area">
+            <a href="index.html"><img src="{% static 'images/logo.png' %}" alt=""></a>
+        </div>
+
+        <!-- Navbar Area -->
+        <div class="bueno-main-menu" id="sticker">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Menu -->
+                    <nav class="classy-navbar justify-content-between" id="buenoNav">
+
+                        <!-- Toggler -->
+                        <div id="toggler"><img src="{% static 'img/core-img/toggler.png' %}" alt=""></div>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+
+                            <!-- Close Button -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Nav Start -->
+                            {% include 'navbar.html' %}           <!-- Include Nav html file -->
+                            
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+
+    <!-- ##### Treading Post Area Start ##### -->
+    <div class="treading-post-area" id="treadingPost">
+        <div class="close-icon">
+            <i class="fa fa-times"></i>
+        </div>
+
+        <h4>Treading Post</h4>
+
+        <!-- Single Blog Post -->
+        <div class="single-blog-post style-1 d-flex flex-wrap mb-30">
+            <!-- Blog Thumbnail -->
+            <div class="blog-thumbnail">
+                <img src="{% static 'images/masala dosa.jpg' %}" alt="">
+            </div>
+            <!-- Blog Content -->
+            <div class="blog-content">
+                <a href="#" class="post-tag">South Indian</a>
+                <a href="#" class="post-title">Masala Dosa</a>
+                <div class="post-meta">
+                    <a href="#" class="post-date">July 11, 2024</a>
+                    <a href="#" class="post-author">By Antony</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Single Blog Post -->
+        <div class="single-blog-post style-1 d-flex flex-wrap mb-30">
+            <!-- Blog Thumbnail -->
+            <div class="blog-thumbnail">
+                <img src="{% static 'images/strawberry sake.jpg' %}" alt="">
+            </div>
+            <!-- Blog Content -->
+            <div class="blog-content">
+                <a href="#" class="post-tag">Drinks</a>
+                <a href="#" class="post-title">Fresh Strawberry Milkshake</a>
+                <div class="post-meta">
+                    <a href="#" class="post-date">July 11, 2024</a>
+                    <a href="#" class="post-author">By Antony</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Single Blog Post -->
+        <div class="single-blog-post style-1 d-flex flex-wrap mb-30">
+            <!-- Blog Thumbnail -->
+            <div class="blog-thumbnail">
+                <img src="{% static 'images/pizza.jpg' %}" alt="">
+            </div>
+            <!-- Blog Content -->
+            <div class="blog-content">
+                <a href="#" class="post-tag">Junk Food</a>
+                <a href="#" class="post-title">Pizza with extra topins</a>
+                <div class="post-meta">
+                    <a href="#" class="post-date">July 11, 2024</a>
+                    <a href="#" class="post-author">By Antony</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ##### Treading Post Area End ##### -->
+
+    <hr>
+
+    <!-- ##### Post Details Area Start ##### -->
+    <section class="post-news-area section-padding-100-0 mb-70">
+        <div class="container">
+            <div class="row justify-content-left">
+                <!-- Post Details Content Area -->
+                <div class="col-1 col-lg-4 col-xl-8">
+                    <div class="post-details-content mb-100">
+                        <div class="blog-thumbnail mb-50">
+                            <img src="{% static 'recipe_image/category 5.jpg' %}" alt="">
+                        </div>
+                        <div class="blog-content">
+                            <a href="#" class="post-tag">Category 5</a>
+                            <h4 class="post-title">Healthy Eating Type</h4>
+                            <div class="post-meta mb-50">
+                                <a href="#" class="post-date">July 11, 2024</a>
+                                <a href="#" class="post-author">By Antony</a>
+                            </div>
+
+                            <h5 class="mb-15">Overview</h5>
+                            <p class="mb-30">Healthy eating is all about consuming a balanced diet that provides your body with the necessary nutrients to function correctly. This includes a variety of fruits, vegetables, whole grains, lean proteins, and healthy fats.</p>
+
+                            <h5 class="mb-15">Type 1 : Balanced Diet</h5>
+                            <ul>
+                                <li class="mb-15">👉 Emphasizes eating a variety of foods in the right proportions to provide essential nutrients.</li>
+                                <li class="mb-30">👉 Examples: Fruits and Vegetables, Whole Grains, Proteins, Healthy Fats, Dairy</li>
+                            </ul>
+
+                            <h5 class="mb-15">Type 2 : Plant-Based Diet</h5>
+                            <ul>
+                                <li class="mb-15">👉 Focuses primarily on foods derived from plants.</li>
+                                <li class="mb-30">👉 Examples:  Vegetable stir-fry, cheese omelet, lentil soup, Chickpea curry, almond milk smoothie, quinoa salad</li>
+                            </ul>
+
+                            <h5 class="mb-15">Type 3: Mediterranean Diet</h5>
+                            <ul>
+                                <li class="mb-15">👉 Based on the traditional cuisine of countries bordering the Mediterranean Sea.</li>
+                                <li class="mb-30">👉 Examples: Healthy Fats(Olive oil, olives, nuts), Proteins(Grilled fish, chicken, legumes), Whole Grains(Whole grain bread, pasta, barley), Fruits and Vegetables(Tomatoes, cucumbers, oranges, figs), Dairy(Feta cheese, Greek yogurt)</li>
+                            </ul>
+
+                            <h5 class="mb-15">Type 4 : Low-Carb Diet</h5>
+                            <ul>
+                                <li class="mb-15">👉 Reduces carbohydrate intake while emphasizing protein and fat.</li>
+                                <li class="mb-30">👉 Examples: Proteins(Beef, chicken, eggs, fish), Vegetables(Leafy greens, bell peppers, broccoli), Healthy Fats(Butter, coconut oil, avocados), Snacks(Cheese sticks, nuts, seeds)</li>
+                            </ul>
+
+                            <h5 class="mb-15">Type 5 : DASH Diet (Dietary Approaches to Stop Hypertension)</h5>
+                            <ul>
+                                <li class="mb-15">👉 Aims to prevent and lower high blood pressure.</li>
+                                <li class="mb-30">👉 Examples: Fruits and Vegetables(Bananas, leafy greens, berries), Whole Grains(Oatmeal, whole wheat pasta, brown rice), Lean Proteins(Chicken, fish, beans), Low-Fat Dairy(Skim milk, yogurt, cheese)</li>
+                            </ul>
+
+                            <h5 class="mb-15">Type 6 : Flexitarian Diet</h5>
+                            <ul>
+                                <li class="mb-15">👉 Primarily vegetarian but allows for occasional meat and fish.</li>
+                                <li class="mb-30">👉 Examples: Plant-Based Proteins(Tofu, tempeh, legumes) , Occasional Meat(Chicken breast, salmon, turkey), Fruits and Vegetables(Berries, leafy greens, sweet potatoes), Whole Grains(Brown rice, quinoa, whole wheat bread)</li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+
+                       
+                       
+    <!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-5">
+                    <!-- Copywrite Text -->
+                    <p class="copywrite-text"><a href="#"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="#" target="_blank">Our Team</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                </div>
+                <div class="col-12 col-sm-7">
+                    <!-- Footer Nav -->
+                    <div class="footer-nav">
+                        <ul>
+                            <li class="active"><a href="/">Home</a></li>
+                            <li><a href="/recipe">Recipes</a></li>
+                            <li><a href="/about">About Us</a></li>
+                            <li><a href="/contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ##### Footer Area Start ##### -->
+
+    <!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="{% static 'js/jquery/jquery-2.2.4.min.js' %}"></script>
+    <!-- Popper js -->
+    <script src="{% static 'js/bootstrap/popper.min.js' %}"></script>
+    <!-- Bootstrap js -->
+    <script src="{% static 'js/bootstrap/bootstrap.min.js' %}"></script>
+    <!-- All Plugins js -->
+    <script src="{% static 'js/plugins/plugins.js' %}"></script>
+    <!-- Active js -->
+    <script src="{% static 'js/active.js' %}"></script>
+</body>
+
+</html>
